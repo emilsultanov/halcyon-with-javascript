@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ----------------------------------- nav-menu--------------------------- */
+.nav-menu{
+    width: 100%;
+    max-height: 0;
+    background-color: #242830;
+    overflow:hidden;
+}
+.active{
+    max-height: 360px;
+    transition: all 0.9s ease;
+}
+.deactive{
+    max-height: 0;
+    transition: all 0.9s ease;
+}
+.nav-menu ul{
+    list-style: none;
+    width: 700px;
+    margin: 0 auto;
+}
+.nav-menu ul li{
+    padding: 20px 15px 20px 0;;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2); 
+    position: relative;
+}
+.nav-menu ul li::after{
+    content: '>';
+    color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    right: 0;
+}
+.nav-menu ul li:nth-of-type(6){
+    border: none;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.6);
+}
+#header .nav-icon{
+    position: relative;
+}
+#header .nav-icon #myBtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline:none;
+}
+/* ----------------------------- end of nav-menu ------------------------------- */
+
+/* ------------------------------ content of header ---------------------------- */
+#header .text{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    z-index: 1;
+    color: #333;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+.text span{
+    color: #a1a9b0;
+    letter-spacing: 5px;
+}
+.text p{
+    color: #8c9398;
+    letter-spacing: 2px;
+    padding-top: 15px;
+    margin-bottom: 50px;
+}
+.text a{
+    padding: 20px 40px;
+    margin-top: 10px;
+    text-decoration: none;
+    color:#fff;
+    background:rgba(61, 201, 179, 1);
+    letter-spacing: 1px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px 0px #309383;
+}
+/* ------------------------------ end of content of header ------------------------- */
+
+/* ------------------------------ start of slider ------------------------------------ */
+.slider-section{
+    width: 100%;
+    height: 650px;
+}
+
+.slider-section .iphone{
+    width: 50%;
+    height: 100%;
+    background: url('img/iphone-bg.png');
+    background-repeat: no-repeat;
+    background-position-x: -16%;
+    float: left;
+}
+.slider-section .slider-wrapper{
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow:hidden;
+    position: relative; 
+}
+.slider-wrapper .buttons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-wrapper .slider{
+    width: 1263px;
+    height: 500px;
+    margin: 75px auto;
+}
+
+.slider .items{
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    float: left;
+    padding: 0 65.75px;
+}
+.items h1{
+    color: #353535;
+    font-size: 20px;
+    margin-top: 10%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.items img{
+    margin: 2% 0;
+}
+.items p{
+    color: #959CA0;
+    font-size: 18px;
+    word-spacing: 3px;
+    line-height: 1.3;
+}
+/* --------------------------- end of slider --------------------------------------------------- */
+
+/* --------------------------- start of carousel ------------------------------------------------ */
+
+
+
+.carousel{
+    width: 100%;
+    height: 675px;
+    position: relative;
+}
+.carousel .container{
+    width: 1200px;
+    height: 485px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.carousel .buttons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container .slider{
+    width: 2400px;
+    height: 100%;
+}
+.slider .slider-items{
+    width: 370px;
+    height: 470px;
+    float: left;
+    padding: 0 15px;
+    text-align: center;
+}
+.slider-items .img img{
+    width: 100%;
+    height: 222px;
+}
+.slider-items h1,p{
+    margin-top: 20px;
+}
+.slider-items h1{
+    padding: 10px 0;
+    color: #353535;
+}
+.slider-items h1::after{
+    content: '';
+    border: solid 2px #3dc9b3;
+    display: block;
+    width: 40px;
+    margin: 15px auto;
+}
+.slider-items p{
+    color: #8c9398;
+    word-spacing: 1px;
+    line-height: 20px;
+    font-size: 17px;
+}
+
+
+
+
